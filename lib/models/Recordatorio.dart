@@ -1,5 +1,5 @@
 class Recordatorio {
-  String id; // ID local (SQLite)
+  String id;
   String titulo;
   String descripcion;
   DateTime fechaHora;
@@ -28,9 +28,9 @@ class Recordatorio {
   }
 
   // Crear objeto desde Map (SQLite)
-  factory Recordatorio.fromMap(Map<String, dynamic> map) {
+  factory Recordatorio.fromMap(Map<String, dynamic> map, String iddoc) {
     return Recordatorio(
-      id: map['id'],
+      id: iddoc,
       titulo: map['titulo'],
       descripcion: map['descripcion'],
       fechaHora: DateTime.parse(map['fechaHora']),
