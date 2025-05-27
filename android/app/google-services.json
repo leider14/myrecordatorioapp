@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "528405471290",
+    "firebase_url": "https://pablo-d0d87-default-rtdb.firebaseio.com",
+    "project_id": "pablo-d0d87",
+    "storage_bucket": "pablo-d0d87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528405471290:android:7adfef0b5296c2cc5b1503",
+        "android_client_info": {
+          "package_name": "com.ddj.j"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe5xkX7lJetpuTcQS93d_4GFCw3pLPSsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528405471290:android:54c37e361de0aa1e5b1503",
+        "android_client_info": {
+          "package_name": "com.example.recordatoriosapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe5xkX7lJetpuTcQS93d_4GFCw3pLPSsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528405471290:android:45d66c85c9c611865b1503",
+        "android_client_info": {
+          "package_name": "com.example.webflutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe5xkX7lJetpuTcQS93d_4GFCw3pLPSsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
