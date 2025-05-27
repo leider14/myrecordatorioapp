@@ -1,22 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:recordatoriosapp/screens/homenotes.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
-import 'package:hive_flutter/hive_flutter.dart';
+import 'package:recordatoriosapp/screens/home.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  runApp(const MainApp());
+
+void main() {
+  runApp(const MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: MyHomeNotes());
+    return MaterialApp(
+      title: 'Notas App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: const NotesScreen(),
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
