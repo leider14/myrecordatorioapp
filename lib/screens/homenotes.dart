@@ -2,6 +2,8 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:recordatoriosapp/functions/functions.dart';
+import 'package:recordatoriosapp/models/Recordatorio.dart';
 import 'package:recordatoriosapp/utils/colors.dart';
 
 class MyHomeNotes extends StatefulWidget {
@@ -27,7 +29,14 @@ class _MyHomeNotesState extends State<MyHomeNotes> {
         backgroundColor: myClrBackgroundCard,
         foregroundColor: myClrFontBold,
         onPressed: () {
-        
+          guardarRecordatorioEnFirebase(
+            Recordatorio(
+              id: "", 
+              titulo: "Mi Primer Tarea", 
+              descripcion: "Recordar Terminar con El diseño", 
+              fechaHora: DateTime.now()
+            )
+          );
         },
       ),
     );
