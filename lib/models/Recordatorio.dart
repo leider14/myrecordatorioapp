@@ -1,5 +1,5 @@
 class Recordatorio {
-  int? id; // ID local (SQLite)
+  String id; // ID local (SQLite)
   String titulo;
   String descripcion;
   DateTime fechaHora;
@@ -7,7 +7,7 @@ class Recordatorio {
   bool sincronizado; // Indica si ya fue sincronizado con el servidor
 
   Recordatorio({
-    this.id,
+    required this.id,
     required this.titulo,
     required this.descripcion,
     required this.fechaHora,
